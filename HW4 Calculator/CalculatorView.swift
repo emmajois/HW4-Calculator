@@ -35,6 +35,7 @@ struct CalculatorView: View {
                 VStack(alignment: .trailing, spacing: Constants.buttonSpacing) {
                     HStack{
                         Toggle("Allow Sounds?", isOn: $calculatorViewModel.allowSounds)
+                            .foregroundColor(.white)
                     }
                     Spacer()
                     Text("1,000")
