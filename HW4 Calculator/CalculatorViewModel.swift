@@ -19,4 +19,8 @@ import Foundation
             soundPlayer.playSound(named: "N56BNFY-click.mp3")
         }
     }
+    // function for adding
+    // function for subtracting
+    // function for dividing
+    // function for multiplying
 }
