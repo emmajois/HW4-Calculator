@@ -14,9 +14,9 @@ import Foundation
     //MARK: - Model access
     
     //MARK: - User intents
-    func handleButtonTap(allowSounds: Bool){
-        //if allowSounds {
+    func handleButtonTap(){
+        if allowSounds {
             soundPlayer.playSound(named: "N56BNFY-click.mp3")
-       // }
+        }
     }
 }

@@ -24,18 +24,19 @@ struct CalculatorView: View {
     ]
     let gridItems = Array<GridItem>(repeating: .init(.flexible()), count: 4)
     
-    let calculatorViewModel: CalculatorViewModel
+    @Bindable var calculatorViewModel: CalculatorViewModel
 
     var body: some View {
-        HStack{
-            Toggle("Allow Sounds?", isOn: calculatorViewModel.allowSounds)
-        }
         GeometryReader { geometry in
             ZStack(alignment: .bottom) {
                 Rectangle()
                     .fill(.black)
                     .edgesIgnoringSafeArea(.all)
                 VStack(alignment: .trailing, spacing: Constants.buttonSpacing) {
+                    HStack{
+                        Toggle("Allow Sounds?", isOn: $calculatorViewModel.allowSounds)
+                    }
+                    Spacer()
                     Text("1,000")
                         .font(.system(size: Constants.displayFontSize, weight: .light))
                         .foregroundStyle(.white)
