@@ -11,18 +11,19 @@ import Foundation
     //MARK: - Properties
     var soundPlayer = SoundPlayer()
     var allowSounds = true
-    var total = 0 //the total that will be displayed on the calculator
-    // we need a way to access the calculator calculate
+    // display value: string. the total that will be displayed on the calculator
     //MARK: - Model access
-    // we'll need access to the value of the numbers in the calculator
-    // we'll need access to the total
+    // Pending symbol
     
     //MARK: - User intents
     func handleButtonTap(){
-        if allowSounds {
-            soundPlayer.playSound(named: "N56BNFY-click.mp3")
+        Task{
+            if allowSounds {
+                await soundPlayer.playSound(named: "N56BNFY-click.mp3")
+            }
         }
     }
-    // clearing a calculation
-    // calculate completely
+    // enterNumber
+    // handleButtonTaps: numeric, operator (clear, utility (pos or neg), computer (+ - * /), calc result (=)
+
 }

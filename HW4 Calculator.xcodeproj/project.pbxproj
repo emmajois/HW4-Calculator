@@ -18,8 +18,10 @@
 		3F36B60D2ABE3BB60014B321 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36B60C2ABE3BB60014B321 /* CalculatorButton.swift */; };
 		FC3C7DDE2AC4A9B200E6B288 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3C7DDD2AC4A9B200E6B288 /* SoundPlayer.swift */; };
 		FC3C7DE02AC4AB5E00E6B288 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3C7DDF2AC4AB5E00E6B288 /* CalculatorViewModel.swift */; };
-		FCFA45E72AC5243A0090B05A /* N56BNFY-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCFA45E62AC5243A0090B05A /* N56BNFY-click.mp3 */; };
 		FCFA45E92AC525200090B05A /* CalculatorCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA45E82AC525200090B05A /* CalculatorCalculate.swift */; };
+		FCFA45EB2AC5C7130090B05A /* N56BNFY-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCFA45EA2AC5C7130090B05A /* N56BNFY-click.mp3 */; };
+		FCFA45ED2AC5C8500090B05A /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA45EC2AC5C8500090B05A /* CalculatorBrain.swift */; };
+		FCFA45EF2AC5C8960090B05A /* CalculatorButtonType+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA45EE2AC5C8960090B05A /* CalculatorButtonType+Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +56,10 @@
 		3F36B60C2ABE3BB60014B321 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		FC3C7DDD2AC4A9B200E6B288 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		FC3C7DDF2AC4AB5E00E6B288 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
-		FCFA45E62AC5243A0090B05A /* N56BNFY-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "N56BNFY-click.mp3"; path = "../../../../Downloads/N56BNFY-click.mp3"; sourceTree = "<group>"; };
 		FCFA45E82AC525200090B05A /* CalculatorCalculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCalculate.swift; sourceTree = "<group>"; };
+		FCFA45EA2AC5C7130090B05A /* N56BNFY-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "N56BNFY-click.mp3"; sourceTree = "<group>"; };
+		FCFA45EC2AC5C8500090B05A /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		FCFA45EE2AC5C8960090B05A /* CalculatorButtonType+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalculatorButtonType+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 			children = (
 				3F36B60A2ABE38070014B321 /* CalculatorButtonType.swift */,
 				FCFA45E82AC525200090B05A /* CalculatorCalculate.swift */,
+				FCFA45EC2AC5C8500090B05A /* CalculatorBrain.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				FC3C7DDD2AC4A9B200E6B288 /* SoundPlayer.swift */,
+				FCFA45EE2AC5C8960090B05A /* CalculatorButtonType+Color.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -180,7 +186,7 @@
 		FC3C7DDA2AC4A8CE00E6B288 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				FCFA45E62AC5243A0090B05A /* N56BNFY-click.mp3 */,
+				FCFA45EA2AC5C7130090B05A /* N56BNFY-click.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -290,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F36B5E82ABE37EF0014B321 /* Preview Assets.xcassets in Resources */,
-				FCFA45E72AC5243A0090B05A /* N56BNFY-click.mp3 in Resources */,
+				FCFA45EB2AC5C7130090B05A /* N56BNFY-click.mp3 in Resources */,
 				3F36B5E52ABE37EF0014B321 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,8 +326,10 @@
 				3F36B60B2ABE38070014B321 /* CalculatorButtonType.swift in Sources */,
 				3F36B5E32ABE37EE0014B321 /* CalculatorView.swift in Sources */,
 				3F36B5E12ABE37EE0014B321 /* HW4_CalculatorApp.swift in Sources */,
+				FCFA45EF2AC5C8960090B05A /* CalculatorButtonType+Color.swift in Sources */,
 				FC3C7DE02AC4AB5E00E6B288 /* CalculatorViewModel.swift in Sources */,
 				FCFA45E92AC525200090B05A /* CalculatorCalculate.swift in Sources */,
+				FCFA45ED2AC5C8500090B05A /* CalculatorBrain.swift in Sources */,
 				3F36B60D2ABE3BB60014B321 /* CalculatorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,7 @@
 //  Created by Stephen Liddle on 9/22/23.
 //
 
-import SwiftUI
+import Foundation
 
 enum CalculatorButtonType {
     case utility
@@ -14,23 +14,10 @@ enum CalculatorButtonType {
     case doubleWide
 }
 
-extension CalculatorButtonType {
-    var backgroundColor: Color {
-        switch self {
-            case .utility:
-                Color("UtilityBackground")
-            case .compute:
-                Color("ComputeBackground")
-            case .number, .doubleWide:
-                Color("NumberBackground")
-        }
-    }
-
-    var foregroundColor: Color {
-        self == .utility ? .black : .white
-    }
-
-    var spanWidth: Int {
-        self == .doubleWide ? 2 : 1
-    }
+enum OperationSymbol: String, Hashable{
+    case divide = "/"
+    case multiply = "*"
+    case subtract = ""
 }
+
+//typealias ButtonSpec = (symbol: OperationSymbol, type: CalculatorButtonType)

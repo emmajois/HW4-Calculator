@@ -7,9 +7,15 @@
 
 import Foundation
 
+// totaling everything - accumulator
+// left operand
+// pending computation
+
 // function for adding
 // function for subtracting
 // function for dividing
 // function for multiplying
-// totaling everything
-
+// clear/ clear all
+// negate operation
+// setter for the accumulator
+// calculate
